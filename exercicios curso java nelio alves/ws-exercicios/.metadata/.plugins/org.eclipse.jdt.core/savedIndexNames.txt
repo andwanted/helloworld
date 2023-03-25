@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+C:\Users\ander\OneDrive\Área de Trabalho\Aprendizado em Java\workspace\ws-exercicios\.metadata\.plugins\org.eclipse.jdt.core
+4121276123.index
+2575757831.index
+4001481361.index
+1150726414.index
+2498300582.index
+2507007661.index
