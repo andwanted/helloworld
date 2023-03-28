@@ -37,7 +37,34 @@ public class Program {
 			dia = "sabado";
 
 		}
-		System.out.println("Dia da semana: " + dia);
+		System.out.println("Dia da semana: " + dia + " em switch-case");
+
+		dia = null;
+
+		System.out.print("Digite o dia da semana: ");
+		n = sc.nextInt();
+		if (n == 1) {
+			dia = "domingo";
+		}
+		if (n == 2) {
+			dia = "segunda-feira";
+		}
+		if (n == 3) {
+			dia = "terça-feira";
+		}
+		if (n == 4) {
+			dia = "quarta-feira";
+		}
+		if (n == 5) {
+			dia = "quinta-feira";
+		}
+		if (n == 6) {
+			dia = "sexta-feira";
+		}
+		if (n == 7) {
+			dia = "sabado";
+		}
+		System.out.println("Dia da semana " + dia + " com if");
 
 		sc.close();
 	}
