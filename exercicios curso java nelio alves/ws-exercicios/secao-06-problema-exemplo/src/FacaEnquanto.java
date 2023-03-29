@@ -9,6 +9,14 @@ import java.util.Scanner;
 	 + 32
  */
 
+/*
+ * • Estrutura repetitiva "faça-enquanto"
+	• O bloco de comandos executa pelo menos uma vez, pois a condição é verificada no final.
+	• Regra:
+	• V: volta
+	• F: pula fora
+ */
+
 public class FacaEnquanto {
 
 	public static double soma(double soma) {
