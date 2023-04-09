@@ -9,8 +9,9 @@ public class Program5 {
 
 		Scanner sc = new Scanner(System.in);
 
-		System.out.println("Digite uma pasta: ");
-		String strPath = sc.nextLine();
+		//System.out.println("Digite uma pasta: ");
+		//String strPath = sc.nextLine();
+		String strPath = "c:\\temp";
 
 		File path = new File(strPath);
 
