@@ -3,7 +3,7 @@ package application6;
 import java.io.File;
 import java.util.Scanner;
 
-public class Program6 {
+public class Program {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
