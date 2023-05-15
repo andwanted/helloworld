@@ -1,23 +1,22 @@
 package model.entities;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
-public class Contratos {
+public class Contrato {
 
 	private Integer numero;
-	private Date data;
+	private LocalDate data;
 	private Double valorTotal;
 
 	private List<Parcelas> parcelas = new ArrayList<>();
 	
 
-	public Contratos(Integer numero, Date data, Double valorTotal, List<Parcelas> parcelas) {
+	public Contrato(Integer numero, LocalDate data, Double valorTotal) {
 		this.numero = numero;
 		this.data = data;
 		this.valorTotal = valorTotal;
-		this.parcelas = parcelas;
 	}
 
 	public Integer getNumero() {
@@ -28,11 +27,11 @@ public class Contratos {
 		this.numero = numero;
 	}
 
-	public Date getData() {
+	public LocalDate getData() {
 		return data;
 	}
 
-	public void setData(Date data) {
+	public void setData(LocalDate data) {
 		this.data = data;
 	}
 
@@ -48,10 +47,6 @@ public class Contratos {
 		return parcelas;
 	}
 
-	public void setParcelas(List<Parcelas> parcelas) {
-		this.parcelas = parcelas;
-	}
-	
 	
 
 }
