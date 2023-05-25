@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy/>
+<typeInfoHistroy>
+    <typeInfo handle="=secao-18-interfaces-exercicio/src&lt;model.service{ServicoPagamentoOnline.java[ServicoPagamentoOnline" modifiers="513" timestamp="1683836566390"/>
+    <typeInfo handle="=secao-18-exercicio-refazendo/src&lt;services{OnlinePaymentService.java[OnlinePaymentService" modifiers="513" timestamp="1684686249434"/>
+    <typeInfo handle="=secao-18-exercicio-propio/src&lt;services{ServicoFinanciamento.java[ServicoFinanciamento" modifiers="513" timestamp="1684789739890"/>
+</typeInfoHistroy>

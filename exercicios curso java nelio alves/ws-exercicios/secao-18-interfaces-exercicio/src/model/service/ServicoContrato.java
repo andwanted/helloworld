@@ -23,6 +23,7 @@ public class ServicoContrato {
 			double juros = servicoPagamentoOnline.juros(parcelaBasica, i);
 			double taxa = servicoPagamentoOnline.taxaPagamento(parcelaBasica + juros);
 			double cota = parcelaBasica + juros + taxa;
+			
 			contrato.getParcelas().add(new Parcelas(vencimentoParcela,cota));
 			
 			
