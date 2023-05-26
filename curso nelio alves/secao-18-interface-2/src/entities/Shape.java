@@ -2,24 +2,8 @@ package entities;
 
 import enums.*;
 
-public abstract class Shape {
-	protected Color color;
+interface Shape {
 
-	public Shape(Color color) {
-		super();
-		this.color = color;
-	}
+	double area();
 
-	public Color getColor() {
-		return color;
-	}
-
-	public void setColor(Color color) {
-		this.color = color;
-	}
-
-	public double area() {
-		return 0;
-
-	}
 }
