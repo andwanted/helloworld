@@ -1,7 +1,5 @@
 package services;
 
-import java.time.LocalDate;
-
 import entities.Contract;
 import entities.Installment;
 
@@ -14,15 +12,17 @@ public class ContractService {
 	}
 
 	public void processContract(Contract contract, int months) {
-		double basicQuota = contract.getTotalValue() / months;
+
+		double valorParcial = contract.getValue() / months;
 
 		for (int i = 1; i <= months; i++) {
 
-			double interest = onlinePaymentService.interest(basicQuota, i);
-			double fee = onlinePaymentService.paymentFee(basicQuota + interest);
-			LocalDate dueDate = contract.getDate().plusMonths(i);
-			double quota = basicQuota + interest + fee;
-			contract.getInstallments().add(new Installment(dueDate, quota));
+			double juros = onlinePaymentService.interest(valorParcial, i);
+			double taxa = onlinePaymentService.paymentFee(valorParcial + juros);
+			double valorParcela = valorParcial + taxa + juros;
+
+			contract.getInstallments().add(new Installment(contract.getDate().plusMonths(i), valorParcela));
+
 		}
 
 	}
