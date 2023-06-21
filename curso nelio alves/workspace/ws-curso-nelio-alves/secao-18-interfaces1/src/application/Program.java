@@ -7,8 +7,8 @@ import java.util.Date;
 import java.util.Locale;
 import java.util.Scanner;
 
-import model.entities.CarRental;
-import model.entities.Vehicle;
+import entities.CarRental;
+import entities.Vehicle;
 
 public class Program {
 
