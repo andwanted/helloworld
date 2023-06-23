@@ -21,7 +21,7 @@ public class Program {
 		}
 
 		ps.print();
-		Integer x = ps.first();
+		int x = ps.first();
 		System.out.println("First: " + x);
 		
 		sc.close();
