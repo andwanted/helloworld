@@ -7,7 +7,15 @@ import java.util.List;
 public class Program {
 
 	public static void main(String[] args) {
-
+		
+		List<Integer> intList = new ArrayList<Integer>();
+		intList.add(10);
+		intList.add(5);
+		List<? extends Number> list = intList;
+		Number x = list.get(0);
+		//list.add(20); // erro de compilacao
+		//get - OK 	put - ERROR
+		
 		List<Object> myObjs = new ArrayList<Object>();
 		myObjs.add("Maria");
 		myObjs.add("Alex");
