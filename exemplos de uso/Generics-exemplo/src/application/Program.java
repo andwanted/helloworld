@@ -1,16 +1,16 @@
 package application;
 
 
-import services.PrintServiceDouble;
+import services.PrintService;
 
 public class Program {
 
 	public static void main(String[] args) {
 		
-		PrintServiceDouble ps = new PrintServiceDouble();
-		ps.addValue(10.0);
-		ps.addValue(32.5);
-		ps.addValue(5.50);
+		PrintService<String> ps = new PrintService<String>();
+		ps.addValue("Anderson");
+		ps.addValue("Jose");
+		ps.addValue("Pedro");
 		
 		ps.print();
 		
