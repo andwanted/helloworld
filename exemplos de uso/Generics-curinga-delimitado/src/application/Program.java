@@ -22,7 +22,7 @@ public class Program {
 		System.out.println("Total area: " + totalArea(myCircles));
 	}
 
-	public static double totalArea(List<Shape> list) {
+	public static double totalArea(List<? extends Shape> list) {
 		double sum = 0.0;
 		for (Shape s : list) {
 			sum += s.area();
