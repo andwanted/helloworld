@@ -1,6 +1,6 @@
 package entities;
 
-public class Product {
+public class Product implements Comparable<Product> {
 
 	private String produto;
 	private Double valor;
@@ -34,6 +34,17 @@ public class Product {
 		this.produto = produto;
 		this.valor = valor;
 		this.id = id;
+	}
+
+	@Override
+	public String toString() {
+		return "Name " + produto + " Price: " + String.format("%.2f", valor);
+	}
+
+	@Override
+	public int compareTo(Product o) {
+		// TODO Auto-generated method stub
+		return valor.compareTo(o.getValor());
 	}
 
 }
