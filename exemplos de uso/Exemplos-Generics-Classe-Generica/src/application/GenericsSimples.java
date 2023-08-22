@@ -15,6 +15,10 @@ public class GenericsSimples {
 		apresentaClasse.addValue("Valor 2");
 		apresentaClasse.addValue("Valor 3");
 		
+		apresentaClasse.addValue(1);
+		apresentaClasse.addValue(2);
+		apresentaClasse.addValue(3);
+		
 		apresentaClasse.apresentar();
 	}
 
