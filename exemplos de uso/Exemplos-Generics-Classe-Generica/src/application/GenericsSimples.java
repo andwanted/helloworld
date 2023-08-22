@@ -9,16 +9,16 @@ public class GenericsSimples {
 
 		List<String> listString = new ArrayList<>(List.of("Maçã", "Pera", "Uva"));
 		List<Integer> listInteger = new ArrayList<>(List.of(10, 23, 5));
-		
+
 		imprime(listString);
-		//sem o uso de wildcards (tipo curinga) não conseguimos passar um outro tipo ao método
+		// com o uso de wildcards tipo curinga, deixando o método mais generico porem
 		imprime(listInteger);
-		
+
 	}
 
-	public static void imprime(List<String> value) {
+	public static void imprime(List<?> value) {
 
-		for (String v : value) {
+		for (Object v : value) {
 			System.out.println(v);
 		}
 
