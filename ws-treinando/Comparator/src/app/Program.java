@@ -17,11 +17,8 @@ public class Program {
 		list.add(new Product("Bola", 30.00));
 		list.add(new Product("Tesoura", 10.00));
 
-		// Comparator com expressão lambda sem chaves
-		Comparator<Product> comp =(p1,p2) ->p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase());
-		
-		
-		list.sort(comp);
+		// Comparator lambda direto no argumento				
+		list.sort((p1,p2) ->p1.getName().toUpperCase().compareTo(p2.getName().toUpperCase()));
 
 		for (
 
